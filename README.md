@@ -1,6 +1,6 @@
 <h2>Registration Application</h2>
 <p>
-A simple application that is using angularJS as front end and nodejs along with express framework for REST API.
+A simple responsive application that is using angularJS as front end and nodejs along with express framework for REST API.
 Currently the API stores the data in memory and will be flushed when the server restarts.
 </p>
 
@@ -35,4 +35,5 @@ To run this application on your own machine, you need to do the following steps.
   <li>Express</li>
   <li>SASS</li>
   <li>jQuery</li>
+  <li>Bootstrap</li>
 </ul>

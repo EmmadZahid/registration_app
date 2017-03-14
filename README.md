@@ -26,6 +26,7 @@ To run this application on your own machine, you need to do the following steps.
   <li>Install bower on your machine. [npm install -g bower]</li>
   <li>Go to your root repository and run [bower install --save] <b>Note:</b> If there is any conflit please chose 1 as answer</li>
   <li>Once that is done then go to server folder and run [bower install --save]</li>
+  <li>To start the server go to server folder and run command: node server.js</li>
 </ul>
 
 <h2>Technologies Used</h2>

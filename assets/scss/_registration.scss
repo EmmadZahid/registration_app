@@ -1,0 +1,87 @@
+@import "_variables.scss";
+
+$form-width: 825px;
+$radius: 10px;
+
+.reg-form-container{
+	border-radius: 10px;
+	//width: $form-width;
+	//left: 50%;
+	position: relative;
+	//margin-left: (-$form-width/2);
+	margin-bottom: 50px;
+	top: 10px;
+	.title{
+		background-color: #81AFC5;
+		color: white;
+		padding: 35px 45px;
+		margin: 0px;
+		border-top-left-radius: $radius;
+		border-top-right-radius: $radius;
+		font-size: $font-size-xlarge;
+	}
+	.reg-form{
+		width: 100%;
+		padding: 20px 30px 35px 30px;
+		border: 1px solid #cecece;
+		background-color: #f5f5f5;
+		border-bottom-left-radius: $radius;
+		border-bottom-right-radius: $radius;
+		.fb-btn{
+			//width: 290px;
+			//height: 58px;
+			margin-top: 33px;
+		}
+		.separator{
+			$w: 260px;
+			margin: 30px 0px 37px 0px;
+			left: 50%;
+    		position: relative;
+    		margin-left: -($w/2);
+    		width: $w;
+		}
+		.form-group{
+			margin-bottom: 32px;
+			position: relative;
+			label{
+				position: absolute;
+				top: -30px;
+				color: $font-darkgrey-2;
+				font-weight: normal;
+			}
+		}
+		.login-btn{
+			background: #00A0BC;
+			height: 48px;
+			color: white;
+		}
+		.reg-btn{
+			background: #ffc334;
+			height: 48px;
+			color: white;
+		}
+		.right-col{
+			margin-top: 20px;
+			.reg-fields{
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
+
+.userimage-container{
+	position: relative;
+	background-color: white;
+	width: 96px;
+	height: 100px;
+	border-radius: 10px;
+	border: 1px solid #dcdcdc;
+	.upload-icon{
+		width: 32px;
+		height: 26px;
+		position: absolute;
+		bottom: 10px;
+		left: 30px;
+	}
+}

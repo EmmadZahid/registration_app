@@ -1,0 +1,74 @@
+<div class="container">
+	<div class="row">
+		<div class="reg-form-container col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+			<h3 class="title">
+  				Login To Your Account / Register New
+  			</h3>
+			<div class="reg-form container-fluid">
+	  			<div class="row">
+	  				<div class="col-lg-6 col-md-6 col-sm-6">
+	  					<div class="row">
+							<img class="fb-btn col-lg-10 col-md-10 col-sm-10 col-xs-8 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-2" src="/zeropointIT/assets/icons/facebook-btn.jpg">
+	  					</div>
+		  				<img class="separator" src="/zeropointIT/assets/icons/sep.jpg">
+		  				<form name="loginForm">
+			  				<div class="form-group" ng-class="{'has-error': loginForm.loginName.$invalid && loginForm.loginName.$touched}">
+			  					<input id="loginName" name="loginName" ng-model="name" type="text" class="form-control project-input" placeholder="User Name" ng-disabled="disableLoginForm" required>
+			  				</div>
+			  				<div class="form-group" ng-class="{'has-error': loginForm.loginPassword.$invalid && loginForm.loginPassword.$touched}">
+			  					<input id="loginPassword" name="loginPassword" ng-model="password" type="password" class="form-control project-input" placeholder="Password" ng-disabled="disableLoginForm" required>
+			  					<div class="error-field-msg" style="position: absolute; top: 50px; left: 15px;">{{loginError}}</div>
+			  				</div>
+			  				<div class="row">
+			  					<div class="col-lg-6 col-md-6 col-sm-6">
+							    	<div class="checkbox">
+							        <label>
+							          <input type="checkbox"> Remember My password
+							        </label>
+							      </div>
+							    </div>
+							    <div class="col-lg-6 col-md-6 col-sm-6">
+							    	<button ng-click="loginBtnClick(loginForm)" class="btn login-btn full-width" ng-disabled="disableLoginForm">Login</button>
+							    </div>
+			  				</div>
+		  				</form>
+	  				</div>
+	  				<div class="col-lg-6 col-md-6 col-sm-6 right-col">
+	  					<div class="row">
+		  					<div class="col-lg-12 col-md-12 col-sm-12">
+		  						<span class="title-bold">Register</span>
+		  						<div class="userimage-container pull-right">
+		  							<img class="upload-icon" src="/zeropointIT/assets/icons/upload-icon.jpg">
+		  						</div>
+		  					</div>
+	  					</div>
+	  					<div class="row reg-fields">
+		  					<div class="col-lg-12 col-md-12 col-sm-12">
+		  						<form name="form">
+		  							<div class="form-group" ng-class="{'has-error': form.regEmail.$invalid && form.regEmail.$touched}">
+			  						    <label class="control-label">Email</label>
+					  					<input id="regEmail" name="regEmail" ng-model="regEmail" type="email" class="form-control project-input" ng-disabled="disableRegForm" required>
+					  				</div>
+					  				<div class="form-group" ng-class="{'has-error': form.regUsername.$invalid && form.regUsername.$touched}">
+			  						    <label class="control-label">Username</label>
+					  					<input id="regUsername" name="regUsername" ng-model="regUsername" type="text" class="form-control project-input" ng-disabled="disableRegForm" required>
+					  				</div>
+					  				<div class="form-group" ng-class="{'has-error': form.regPassword.$invalid && form.regPassword.$touched}">
+			  						    <label class="control-label">Password</label>
+					  					<input id="regPassword" name="regPassword" ng-model="regPassword" type="password" class="form-control project-input" ng-disabled="disableRegForm" required>
+					  					<div class="error-field-msg" style="position: absolute; top: 50px; left: 15px;">{{regError}}</div>
+					  				</div>
+		  						</form>
+		  					</div>
+	  					</div>
+	  					<div class="row">
+	  						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right">
+						    	<button ng-disabled="disableRegForm" ng-click="registerBtnClick(form)"  style="margin-top: -40px;" class="btn reg-btn full-width">Register</button>
+						    </div>
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+		</div>
+	</div>
+</div>

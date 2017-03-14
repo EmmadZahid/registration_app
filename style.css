@@ -1,0 +1,200 @@
+.checkbox label {
+  font-size: 0.875em;
+  color: #929292;
+  font-weight: 600; }
+
+.reg-form-container {
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 50px;
+  top: 10px; }
+  .reg-form-container .title {
+    background-color: #81AFC5;
+    color: white;
+    padding: 35px 45px;
+    margin: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 2.125em; }
+  .reg-form-container .reg-form {
+    width: 100%;
+    padding: 20px 30px 35px 30px;
+    border: 1px solid #cecece;
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    .reg-form-container .reg-form .fb-btn {
+      margin-top: 33px; }
+    .reg-form-container .reg-form .separator {
+      margin: 30px 0px 37px 0px;
+      left: 50%;
+      position: relative;
+      margin-left: -130px;
+      width: 260px; }
+    .reg-form-container .reg-form .form-group {
+      margin-bottom: 32px;
+      position: relative; }
+      .reg-form-container .reg-form .form-group label {
+        position: absolute;
+        top: -30px;
+        color: #999999;
+        font-weight: normal; }
+    .reg-form-container .reg-form .login-btn {
+      background: #00A0BC;
+      height: 48px;
+      color: white; }
+    .reg-form-container .reg-form .reg-btn {
+      background: #ffc334;
+      height: 48px;
+      color: white; }
+    .reg-form-container .reg-form .right-col {
+      margin-top: 20px; }
+      .reg-form-container .reg-form .right-col .reg-fields {
+        padding-top: 20px;
+        padding-bottom: 20px; }
+
+.userimage-container {
+  position: relative;
+  background-color: white;
+  width: 96px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc; }
+  .userimage-container .upload-icon {
+    width: 32px;
+    height: 26px;
+    position: absolute;
+    bottom: 10px;
+    left: 30px; }
+
+html {
+  width: 100%;
+  height: 200%;
+  background-image: url("./assets/icons/bg_texture.jpg"); }
+
+body {
+  font-size: 13px;
+  font-family: Open sans, sans-serif;
+  margin: 0px !important;
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/icons/bg.png");
+  background-size: 992px;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  background-color: transparent; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: Open sans, sans-serif; }
+
+.pointer {
+  cursor: pointer; }
+
+.full-width {
+  width: 100%; }
+
+.project-input {
+  padding: 22px 58px;
+  border-radius: 10px; }
+
+.title-bold {
+  color: #929292;
+  font-size: 1.375em;
+  font-weight: 700; }
+
+.title-semibold {
+  color: #999999;
+  font-size: 1em; }
+
+input, .btn {
+  font-size: 1.375em; }
+
+input[type='checkbox'] {
+  margin-top: 7px; }
+
+.error-field-msg {
+  color: #A94442;
+  font-size: 0.875em; }
+
+ul {
+  list-style-type: none;
+  padding-left: 0px; }
+
+.profile-container {
+  position: relative;
+  top: 10px;
+  margin-bottom: 100px; }
+  .profile-container .comment-list {
+    list-style-type: none;
+    padding-left: 0px; }
+    .profile-container .comment-list li {
+      margin-bottom: 15px;
+      background-color: #dedede;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc; }
+      .profile-container .comment-list li img {
+        width: 50px;
+        border-radius: 25px;
+        display: inline-block; }
+      .profile-container .comment-list li .name {
+        font-size: 1em;
+        font-weight: 700; }
+      .profile-container .comment-list li .date {
+        font-size: 0.750em;
+        color: #797979; }
+  .profile-container .profile-area {
+    min-height: 200px;
+    width: 100%;
+    padding: 20px 30px 35px 30px;
+    border: 1px solid #cecece;
+    background-color: #f5f5f5;
+    position: relative;
+    transition: height 2s; }
+    .profile-container .profile-area .bio {
+      color: #81afc5; }
+  .profile-container .title {
+    background-color: #81AFC5;
+    color: white;
+    padding: 35px 45px;
+    margin: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 2.125em; }
+  .profile-container .loader {
+    position: absolute;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px; }
+
+tags-input .tags {
+  padding: 5px;
+  border-radius: 10px; }
+  tags-input .tags .tag-item {
+    background: #81afc5;
+    border: 1px solid #4398bf;
+    color: white; }
+
+.signout-btn {
+  background-color: #695375 !important; }
+  .signout-btn :hover {
+    background-color: #695375 !important; }
+  .signout-btn :active {
+    background-color: #695375 !important; }
+
+@media (min-width: 768px) {
+  .reg-form-container .reg-form .right-col {
+    margin-top: 0px; }
+
+  .reg-fields {
+    border-left: 1px solid #dcdcdc; }
+
+  body {
+    font-size: 16px; }
+
+  .profile-container, .reg-form-container {
+    top: 120px; } }
+
+/*# sourceMappingURL=style.css.map */
